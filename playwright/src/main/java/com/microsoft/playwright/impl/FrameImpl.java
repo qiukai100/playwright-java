@@ -53,7 +53,7 @@ public class FrameImpl extends ChannelOwner implements Frame {
 
     name = initializer.get("name").getAsString();
     url = initializer.get("url").getAsString();
-    if (initializer.has("parentFrame")) {
+    if (initializer.has("parentFrame") && !initializer.get("parentFrame").isJsonNull()) {
       parentFrame = connection.getExistingObject(initializer.getAsJsonObject("parentFrame").get("guid").getAsString());
       parentFrame.childFrames.add(this);
     }
