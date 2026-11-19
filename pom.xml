@@ -6,7 +6,7 @@
 
   <groupId>com.microsoft.playwright</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>1.61.0</version>
+  <version>1.61.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Playwright Parent Project</name>
   <description>Java library to automate Chromium, Firefox and WebKit with a single API.
@@ -92,7 +92,7 @@
         <version>${websocket.version}</version>
         <scope>test</scope>
       </dependency>
-      <!-- 
+      <!--
         The following slf4j-simple dependency resolves the warning:
         'SLF4J(W): No SLF4J providers were found.'
         This warning is produced by the org.java-websocket library.
